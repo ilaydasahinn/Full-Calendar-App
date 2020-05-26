@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/edit_layout">
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="262dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="324dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Address"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nameEvent" />
+
+    <TextView
+        android:id="@+id/tv_repeat"
+        android:layout_width="87dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="184dp"
+        android:text="Repeat: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_detailEvent" />
+
+    <EditText
+        android:id="@+id/et_remindTime"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_detailEvent" />
+
+    <TextView
+        android:id="@+id/tv_finishTime"
+        android:layout_width="87dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="52dp"
+        android:text="Finish Time:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_detailEvent" />
+
+    <TextView
+        android:id="@+id/tv_remindTime"
+        android:layout_width="87dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="84dp"
+        android:text="Remind Time:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_detailEvent" />
+
+    <EditText
+        android:focusableInTouchMode="false"
+        android:id="@+id/et_finishTime"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_detailEvent" />
+
+
+    <EditText
+        android:id="@+id/et_nameEvent"
+        android:layout_width="256dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Event Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_detailEvent"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Details of Event"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nameEvent" />
+
+    <TextView
+        android:id="@+id/tv_startTime"
+        android:layout_width="87dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="144dp"
+        android:text="Start Time:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_startTime"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="84dp"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_detailEvent" />
+
+    <RadioGroup
+        android:layout_width="135dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toEndOf="@+id/tv_repeat"
+        app:layout_constraintTop_toBottomOf="@+id/et_remindTime"
+        android:id="@+id/rgroup_repeatTime">
+
+        <RadioButton
+            android:id="@+id/rbtn_everyday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Everyday" />
+
+        <RadioButton
+            android:id="@+id/rbtn_everyweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Every Week" />
+
+        <RadioButton
+            android:id="@+id/rbtn_everymonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Every Month" />
+
+        <RadioButton
+            android:id="@+id/rbtn_everyyear"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Every Year" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_SaveEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_address" />
+
+    <Button
+        android:id="@+id/btnAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="16dp"
+        android:text="Get Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/et_address"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
